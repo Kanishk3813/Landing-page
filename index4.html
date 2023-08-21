@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg2.avif');
+        height: 1200px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        display: inline-block;
+        left: 30px;
+        top: 15px;
+    }
+
+    .left img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .left div {
+        text-align: center;
+
+    }
+
+
+    .mid {
+        /* border: 2px solid aqua; */
+        display: block;
+        width: 40%;
+        margin: 52px auto;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 30px;
+        top: 52px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 30px;
+        font-size: 19px;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+        color: rgb(82, 87, 87);
+    }
+
+    .dropbtn {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #0c0d11;
+        color: white;
+        padding: 18px;
+        font-size: 16px;
+        border: 2px solid white;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 20px 5px;
+        z-index: 1;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #0c0d11;
+        min-width: 0%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(65, 70, 71)
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+    .container {
+        border: 2px solid white;
+        padding: 10px 29px;
+        margin: 10px;
+        border-radius: 10px;
+        float: right;
+        width: 20%;
+        text-align: center;
+        height: 240px;
+    }
+
+    .title h1 {
+        position: relative;
+        width: 20%;
+        text-align: center;
+        left: 647px;
+        top: 19px;
+        font-size: 50px;
+    }
+
+    .sidehead h3 {
+        position: relative;
+        width: 30%;
+        top: 56px;
+        font-size: 30px;
+    }
+
+    .sidehead p {
+        position: relative;
+        width: 40%;
+        left: 20px;
+        width: 86%;
+        top: 50px;
+        font-size: 21px;
+    }
+
+    .sidehead2 h3 {
+        position: relative;
+        width: 20%;
+        top: 100px;
+        font-size: 30px;
+    }
+
+    .sidehead2 p {
+        position: relative;
+        width: 99%;
+        font-size: 21px;
+        top: 100px;
+    }
+
+    .sidehead3 h3 {
+
+        position: relative;
+        font-size: 30px;
+        width: 60%;
+        top: 139px;
+    }
+
+    .sidehead3 p {
+        position: relative;
+        font-size: 21px;
+        width: 100%;
+        top: 152px;
+    }
+
+    .sidehead4 h3 {
+        position: relative;
+        font-size: 30px;
+        width: 50%;
+        top: 200px;
+    }
+
+    .sidehead4 p {
+        position: relative;
+        font-size: 21px;
+        width: 100%;
+        top: 200px;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="img/sym1.png" alt="">
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Packages</a></li>
+                <li><a href="index3.html">Instructors</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <div class="dropdown">
+                <button class="dropbtn">Contact Us</button>
+                <div class="dropdown-content">
+                    <a href="#">Call Us</a>
+                    <a href="#">Email</a>
+                    <a href="#">Message Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <h1>PHOENIX FITNESS</h1>
+        </div>
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div class="sidehead">
+            <h3>About Phoenix Fitness</h3>
+            <p>Welcome to Phoenix Fitness, where your fitness journey begins, and your potential is unleashed.</p>
+        </div>
+        <div class="sidehead2">
+            <h3>Our Mission</h3>
+            <p>At Phoenix Fitness, we're more than just a gym; we're a community dedicated to helping you rise from the
+                ashes and transform into the best version of yourself. Our mission is to empower individuals to achieve
+                their health and fitness goals through expert guidance, a supportive environment, and a passion for
+                wellness.</p>
+        </div>
+        <div class="sidehead3">
+            <h3>Why Choose Phoenix Fitness?</h3>
+            <p><b>Expertise:</b></b> Our team of experienced trainers and instructors is here to guide you every step of
+                the way. From personalized workout plans to nutritional advice, we're committed to your success. <br>
+                <br>
+
+                <b>Community:</b> We believe in the power of community. Join a diverse group of fitness enthusiasts who
+                will motivate and inspire you to reach your goals. <br> <br>
+
+                <b>State-of-the-Art Facilities:</b> Our gym features top-of-the-line equipment and modern amenities to
+                make your fitness journey enjoyable and convenient. <br> <br>
+
+                <b>Holistic Wellness:</b> We understand that fitness is not just about exercise. It's about a balanced,
+                healthy lifestyle. That's why we offer wellness programs that address mind, body, and soul.
+            </p>
+        </div>
+        <div class="sidehead4">
+            <h3>Join Us Today</h3>
+            <p>Whether you're a seasoned athlete or just starting your fitness journey, Phoenix Fitness is the place for
+                you. We invite you to become a part of our community, where you'll find the support, inspiration, and
+                resources you need to rise, shine, and conquer your fitness goals. <br>
+
+                Are you ready to transform? Join Phoenix Fitness today and let's soar together.</p>
+        </div>
+    </header>
+
+</body>
+
+</html>

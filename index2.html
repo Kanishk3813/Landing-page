@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg2.avif');
+        height: 1200px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        display: inline-block;
+        left: 30px;
+        top: 15px;
+    }
+
+    .left img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .left div {
+        text-align: center;
+
+    }
+
+
+    .mid {
+        /* border: 2px solid aqua; */
+        display: block;
+        width: 40%;
+        margin: 52px auto;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 30px;
+        top: 52px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 30px;
+        font-size: 19px;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+        color: rgb(82, 87, 87);
+    }
+
+    .dropbtn {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #0c0d11;
+        color: white;
+        padding: 18px;
+        font-size: 16px;
+        border: 2px solid white;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 20px 5px;
+        z-index: 1;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #0c0d11;
+        min-width: 0%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(65, 70, 71)
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+
+
+    .text h1 {
+        float: left;
+        display: block;
+        margin: 0px 54px;
+        padding: 2px 16px;
+        width: 95px;
+        height: 69px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .membership h1 {
+        color: #8a8fa3;
+        font-size: 40px;
+        float: left;
+        margin: 84px -5px;
+        padding: 39px 28px;
+        width: 30%;
+        height: 20px;
+        left: 320px;
+        position: relative;
+    }
+
+    .standard p {
+        display: inline-block;
+        font-size: 22px;
+        margin: 70px 0px;
+        padding: 120px 39px;
+        width: 32%;
+        height: auto;
+        float: left;
+        text-align: center;
+        position: relative;
+        right: 618px;
+        top: 139px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .btn {
+        float: left;
+        cursor: pointer;
+        margin: 175px 64px;
+        border: aliceblue;
+        right: 1000px;
+        position: relative;
+        top: 316px;
+        background-color: green;
+        color: white;
+        padding: 5px 9px;
+    }
+
+    .yearly p {
+        display: inline-block;
+        font-size: 22px;
+        margin: 70px 0px;
+        padding: 120px 39px;
+        width: 31%;
+        height: auto;
+        float: right;
+        text-align: center;
+        position: relative;
+        left: -45px;
+        border: 2px solid white;
+        border-radius: 10px;
+        bottom: 363px;
+
+    }
+
+    .btn2 {
+        float: right;
+        border: 2px solid black;
+        margin: -32px -277px;
+        text-align: center;
+        position: relative;
+        top: 24px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        padding: 5px 9px;
+    }
+
+    .premium p {
+        display: inline-block;
+        font-size: 22px;
+        margin: 517px -143px;
+        padding: 113px 39px;
+        width: 31%;
+        height: auto;
+        float: right;
+        text-align: center;
+        position: relative;
+        left: -45px;
+        border: 2px solid white;
+        border-radius: 10px;
+        bottom: 363px;
+    }
+
+    .btn3 {
+        float: right;
+        border: 2px solid black;
+        margin: -32px -130px;
+        text-align: center;
+        position: relative;
+        top: 485px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        padding: 5px 9px;
+    }
+</style>
+
+<body>
+    
+    <header class="header">
+        <div class="left">
+            <img src="img/sym1.png" alt="">
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="index3.html">Instructors</a></li>
+                <li><a href="index4.html">About us</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <div class="dropdown">
+                <button class="dropbtn">Contact Us</button>
+                <div class="dropdown-content">
+                    <a href="#">Call Us</a>
+                    <a href="#">Email</a>
+                    <a href="#">Message Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <h1>PHOENIX FITNESS</h1>
+        </div>
+
+        <div class="member">
+            <div class="membership">
+                <h1>Select Your Membership</h1>
+            </div>
+            <div class="standard">
+                <p>1. Monthly Membership: One month package with access to all gym equipments. <br> Price: ₹2000
+                    <br> Time: 5am to 9pm
+                </p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="yearly">
+                <p>2. Yearly Membership: One year package with access to all gym equipments and gym lounge. <br> Price:
+                    ₹22000
+                    <br> Time: 24hrs Open
+                </p>
+                <button class="btn2">Buy Now</button>
+            </div>
+            <div class="premium">
+                <p>3. Premium Yearly Membership: One year premium package with access to gym lounge and personal
+                    trainer.
+                    <br> Price: ₹30000 <br> Time: 24hrs Open
+                </p>
+                <button class="btn3">Buy Now</button>
+            </div>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
